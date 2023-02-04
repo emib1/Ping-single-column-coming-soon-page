@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: 'Libre Franklin', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:hsl(209, 33%, 12%);
+}
+
+
+.container{
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.logo {
+     margin: 1rem;
+}
+
+.text {
+    text-align: center;
+}
+
+h1,.text p  {
+    margin-bottom: 1.5rem;   
+}
+h1 span{
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+}
+
+input, button{
+    width:100% ;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-family: 'Libre Franklin', sans-serif;
+
+}
+
+input{
+    border: 1px solid hsl(223, 100%, 88%);
+    margin-bottom: 0.5rem;  
+
+}
+
+button {
+    border: none;
+    color: white;
+    background-color:hsl(223, 87%, 63%);
+    margin-bottom: 2.5rem;  
+    cursor: pointer;
+}
+
+.img{
+    margin-bottom: 3.5rem;  
+}
+
+
+footer {
+    text-align: center;
+    color: hsl(0, 0%, 59%);
+}
+
+
+.icons i:not(:last-child){
+    margin-right: 5px;
+}
+
+.icons i {
+    color: hsl(223, 87%, 63%);
+    padding: 0.5rem;
+    border: 0.1px solid hsl(0, 0%, 59%);
+    border-radius: 50%;
+    margin-bottom:0.7rem ;
+}
+
+
+
+.message {
+   margin: 0;
+   color:hsl(354, 100%, 66%) ;
+   text-align: left;  
+}
+
+.error{
+    border:thin solid #ff5263;
+  }
+
+
+.hide-error{
+    display: none;
+}
+
+
+
+/**************** Media********************/
+
+@media screen and (min-width:600px){
+
+    .container{
+        max-width: 600px;
+        height: 80vh;
+    }
+
+   .img{
+    width: 70vh;
+   }
+
+    .input {
+        display: flex;
+    }
+
+    input{
+        width: 100%;
+        height: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    button {
+        width: 40%;
+        margin-left: 0.5rem;
+
+    }
+}
+    
